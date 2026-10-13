@@ -111,6 +111,19 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
     </section>
   `,
   styles: `
+    .season-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .season-choice {
+      min-height: 43px;
+      justify-content: flex-start;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+
     .assistant-intro {
       display: grid;
       justify-items: center;
