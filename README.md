@@ -1,59 +1,65 @@
 # PackingList
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+PackingList is a mobile-first progressive web app (PWA) for planning trips and
+keeping track of what to pack. Create a list from scratch, start with a
+destination-style template, browse seasonal suggestions, or use the offline
+packing assistant to generate an editable list.
 
-## Development server
+Lists are saved locally in the browser, so no account is required. Data stays
+on the device and is not automatically synchronized between devices.
 
-To start a local development server, run:
+## Ownership
 
-```bash
-ng serve
-```
+This project is owned and maintained by [RamonaTa](https://github.com/RamonaTa).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Install on a mobile device
 
-## Code scaffolding
+Deploy the app to an HTTPS host, such as Netlify, then open its URL on your
+phone:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **iPhone:** Open the URL in Safari, tap **Share**, then **Add to Home Screen**.
+- **Android:** Open the URL in Chrome, open the menu, then choose **Install app**
+  or **Add to Home screen**.
 
-```bash
-ng generate component component-name
-```
+The installed app opens in a standalone window. The service worker caches the
+app shell for offline use after the app has been loaded.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Development
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Install dependencies and start the local development server:
 
 ```bash
-ng build
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Open [http://localhost:4200](http://localhost:4200). The development server
+reloads the app when source files change.
 
-## Running unit tests
+## Build
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Create a production build:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The static site output is written to `dist/packing-list/browser`.
 
-For end-to-end (e2e) testing, run:
+## Tests
+
+Run the unit tests once:
 
 ```bash
-ng e2e
+npm test -- --watch=false
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Deployment
 
-## Additional Resources
+Netlify can build the app directly from the connected GitHub repository with:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Build command:** `npm run build`
+- **Publish directory:** `dist/packing-list/browser`
+
+The `public/_redirects` file configures the fallback needed for direct visits
+and page refreshes on Angular routes.
