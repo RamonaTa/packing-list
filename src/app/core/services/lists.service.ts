@@ -58,10 +58,25 @@ export class ListsService {
 
   // ---------- Elementi ----------
 
-  addItem(listId: string, name: string, category: Category = 'misc'): void {
-    const item: PackingItem = { id: newId(), name: name.trim(), category, checked: false };
+  addItem(listId: string, name: string, category: Category = 'misc', quantity?: number): void {
+    const item: PackingItem = {
+      id: newId(),
+      name: name.trim(),
+      category,
+      checked: false,
+      ...(quantity === undefined ? {} : { quantity }),
+    };
     if (!item.name) return;
     this.updateList(listId, (l) => ({ ...l, items: [...l.items, item] }));
+  }
+
+  setItemQuantity(listId: string, itemId: string, quantity: number): void {
+    this.updateList(listId, (list) => ({
+      ...list,
+      items: list.items.map((item) =>
+        item.id === itemId ? { ...item, quantity: Math.max(1, quantity) } : item,
+      ),
+    }));
   }
 
   toggleItem(listId: string, itemId: string): void {
