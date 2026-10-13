@@ -107,4 +107,8 @@ export class ListsService {
       /* storage pieno o non disponibile: ignoriamo */
     }
   }
+
+  updateListInfo(id: string, data: { name: string; days: number; season: Season }): void {
+    this.updateList(id, (l) => ({ ...l, ...data }));
+  }
 }
