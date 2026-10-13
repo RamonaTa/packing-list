@@ -12,7 +12,7 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
     <section class="screen">
       <a routerLink="/" class="back-link"><span aria-hidden="true">←</span> Le mie valigie</a>
       <header class="screen-header">
-        <p class="screen-kicker">La tua compagna di viaggio</p>
+        <p class="screen-kicker">Al tuo fianco, in viaggio</p>
         <h1 class="screen-title">Assistente</h1>
         <p class="screen-subtitle">Prepariamo insieme una valigia fatta per il tuo viaggio.</p>
       </header>
@@ -30,8 +30,8 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
         <p class="eyebrow">Passo 1 di 2</p>
         <h2>Genera la tua valigia</h2>
         <p class="helper-text">
-          Creiamo un punto di partenza usando le tue liste e suggerimenti stagionali. Funziona anche
-          offline.
+          Creiamo un punto di partenza usando le tue liste e suggerimenti stagionali. Funziona
+          anche offline.
         </p>
       </section>
 
@@ -94,8 +94,8 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
           <aside class="assistant-history">
             <span class="history-icon" aria-hidden="true">↗</span>
             <p>
-              Useremo le tue <strong>{{ listCount() }} valigie</strong> come riferimento, insieme ai
-              suggerimenti utili per la stagione.
+              Useremo <strong>{{ listCount() }} valigie già create</strong> come riferimento,
+              insieme ai suggerimenti utili per la stagione.
             </p>
           </aside>
         } @else {

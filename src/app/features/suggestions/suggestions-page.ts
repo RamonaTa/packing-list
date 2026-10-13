@@ -69,7 +69,7 @@ type SuggestionFilter = Category | 'all';
                 </span>
                 <span class="suggestion-copy">
                   <strong>{{ item.name }}</strong>
-                  <small>Un buon compagno di viaggio</small>
+                  <small>Un valido supporto in viaggio</small>
                 </span>
                 @if (item.quantity) {
                   <span class="item-quantity">×{{ item.quantity }}</span>

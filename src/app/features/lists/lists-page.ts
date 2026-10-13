@@ -10,7 +10,7 @@ import { SEASON_LABELS } from '../../shared/utils/labels';
   template: `
     <section class="screen">
       <header class="screen-header">
-        <p class="screen-kicker">Pronta a partire?</p>
+        <p class="screen-kicker">La partenza si avvicina?</p>
         <h1 class="screen-title">Le mie valigie</h1>
         <p class="screen-subtitle">Tutto quello che ti serve, senza dimenticare niente.</p>
       </header>
@@ -27,7 +27,7 @@ import { SEASON_LABELS } from '../../shared/utils/labels';
         <section class="summary-card">
           <div class="summary-icon" aria-hidden="true">✈️</div>
           <div>
-            <p class="summary-label">Pronta per la prossima partenza?</p>
+            <p class="summary-label">Riepilogo per la prossima partenza</p>
             <p class="summary-value">{{ readyCount() }} di {{ lists().length }} valigie complete</p>
           </div>
           <span class="summary-sparkle" aria-hidden="true">✦</span>
@@ -52,7 +52,7 @@ import { SEASON_LABELS } from '../../shared/utils/labels';
                     </p>
                   </div>
                   @if (progress(list).pct === 100 && progress(list).total > 0) {
-                    <span class="status-pill">✓ Pronta!</span>
+                    <span class="status-pill">✓ Completa!</span>
                   } @else {
                     <span class="list-percent">{{ progress(list).pct }}%</span>
                   }

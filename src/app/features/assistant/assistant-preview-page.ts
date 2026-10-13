@@ -29,7 +29,7 @@ function candidateKey(item: { name: string; category: Category }): string {
       <div class="steps-indicator" aria-label="Passo 2 di 2">
         <span class="step-current"></span><span class="step-current"></span>
       </div>
-      <p class="eyebrow">Passo 2 di 2 · {{ selectedItems().length }} elementi selezionati</p>
+      <p class="eyebrow">Passo 2 di 2 · {{ selectedItems().length }} elementi inclusi</p>
 
       <label class="field">
         <span class="field-label">Nome della valigia</span>
@@ -65,7 +65,7 @@ function candidateKey(item: { name: string; category: Category }): string {
         } @empty {
           <div class="empty-state">
             <div class="empty-illustration" aria-hidden="true">🧳</div>
-            <h2>Nessun elemento selezionato</h2>
+            <h2>La lista è vuota</h2>
             <p>Torna all’assistente e prova un’altra stagione o durata.</p>
           </div>
         }

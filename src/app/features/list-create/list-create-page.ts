@@ -50,7 +50,7 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
               <h2>Riusa una valigia</h2>
               <span class="soft-pill">Facoltativo</span>
             </div>
-            <p class="helper-text">Parti da una lista che hai già preparato.</p>
+            <p class="helper-text">Riparti da una lista già esistente.</p>
             <div class="reuse-list">
               @for (list of lists(); track list.id) {
                 <button
