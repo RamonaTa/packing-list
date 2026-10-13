@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+:root {
+  --color-brand-50: #effaf8;
+  --color-brand-100: #d6f3ee;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-sand-50: #faf8f5;
+  --color-sand-100: #f3efe8;
+  --color-ink: #1f2933;
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+    background-color: var(--color-sand-100);
+    color: var(--color-ink);
+  }
+}
