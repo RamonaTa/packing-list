@@ -46,6 +46,7 @@ a,
 input,
 select {
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 button {
@@ -70,7 +71,7 @@ a {
 .app-content {
   width: 100%;
   min-height: 100dvh;
-  padding: max(24px, env(safe-area-inset-top)) 18px calc(104px + env(safe-area-inset-bottom));
+  padding: max(24px, env(safe-area-inset-top)) 18px calc(168px + env(safe-area-inset-bottom));
 }
 
 .screen {
@@ -326,7 +327,7 @@ a {
   position: fixed;
   z-index: 3;
   left: 50%;
-  bottom: calc(20px + env(safe-area-inset-bottom));
+  bottom: calc(84px + env(safe-area-inset-bottom));
   width: min(354px, calc(100vw - 36px));
   min-height: 58px;
   margin: 0 auto;
