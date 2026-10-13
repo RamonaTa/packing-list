@@ -17,8 +17,8 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
         <p class="screen-subtitle">Prepariamo insieme una valigia fatta per il tuo viaggio.</p>
       </header>
 
-      <div class="steps-indicator" aria-label="Passo 1 di 3">
-        <span class="step-current"></span><span></span><span></span>
+      <div class="steps-indicator" aria-label="Passo 1 di 2">
+        <span class="step-current"></span><span></span>
       </div>
 
       <section class="assistant-intro">
@@ -27,7 +27,7 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
           <span class="orbit-case">🧳</span>
           <span class="orbit-dot">✧</span>
         </div>
-        <p class="eyebrow">Passo 1 di 3</p>
+        <p class="eyebrow">Passo 1 di 2</p>
         <h2>Genera la tua valigia</h2>
         <p class="helper-text">
           Creiamo un punto di partenza usando le tue liste e suggerimenti stagionali. Funziona anche
@@ -111,6 +111,10 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
     </section>
   `,
   styles: `
+    .form-panel {
+      gap: 24px;
+    }
+
     .season-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));

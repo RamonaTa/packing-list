@@ -26,11 +26,10 @@ function candidateKey(item: { name: string; category: Category }): string {
         <p class="screen-subtitle">Rivedi gli elementi e togli quelli che non ti servono.</p>
       </header>
 
-      <div class="steps-indicator" aria-label="Passo 3 di 3">
-        <span class="step-current"></span><span class="step-current"></span
-        ><span class="step-current"></span>
+      <div class="steps-indicator" aria-label="Passo 2 di 2">
+        <span class="step-current"></span><span class="step-current"></span>
       </div>
-      <p class="eyebrow">Passo 3 di 3 · {{ selectedItems().length }} elementi selezionati</p>
+      <p class="eyebrow">Passo 2 di 2 · {{ selectedItems().length }} elementi selezionati</p>
 
       <label class="field">
         <span class="field-label">Nome della valigia</span>
@@ -73,7 +72,10 @@ function candidateKey(item: { name: string; category: Category }): string {
       </section>
 
       <div class="assistant-preview-actions">
-        <a routerLink="/assistant" class="secondary-button full-width">Modifica viaggio</a>
+        <a routerLink="/assistant" class="secondary-button full-width edit-trip-button">
+          <span aria-hidden="true">←</span>
+          Modifica viaggio
+        </a>
         <button
           type="button"
           class="primary-button full-width"
@@ -105,6 +107,21 @@ function candidateKey(item: { name: string; category: Category }): string {
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
       gap: 9px;
+    }
+
+    .edit-trip-button {
+      min-height: 50px;
+      gap: 7px;
+      border-color: #c0ded7;
+      color: var(--brand-dark);
+      background: #f2f8f5;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .edit-trip-button span {
+      font-size: 18px;
+      line-height: 1;
     }
   `,
 })
