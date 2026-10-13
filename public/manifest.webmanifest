@@ -1,6 +1,6 @@
 {
-  "name": "Packing List",
-  "short_name": "PackingList",
+  "name": "Ready, Set, Pack!",
+  "short_name": "Ready Set Pack",
   "icons": [
     { "src": "/icons/icon-192x192.png?v=3", "sizes": "192x192", "type": "image/png" },
     { "src": "/icons/icon-512x512.png?v=3", "sizes": "512x512", "type": "image/png" }

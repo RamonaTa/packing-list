@@ -1,7 +1,7 @@
-# PackingList
+# Ready, Set, Pack!
 
-PackingList is a mobile-first progressive web app (PWA) for planning trips and
-keeping track of what to pack. Create a list from scratch, start with a
+Ready, Set, Pack! is a mobile-first progressive web app (PWA) for planning
+trips and keeping track of what to pack. Create a list from scratch, start with a
 destination-style template, browse seasonal suggestions, or use the offline
 packing assistant to generate an editable list.
 

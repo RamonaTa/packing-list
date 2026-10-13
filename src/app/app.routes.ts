@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    title: 'Le mie valigie',
+    title: 'Ready, Set, Pack!',
     loadComponent: () => import('./features/lists/lists-page').then((m) => m.default),
   },
   {
