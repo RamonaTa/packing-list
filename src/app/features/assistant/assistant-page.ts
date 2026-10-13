@@ -111,8 +111,8 @@ import { SEASONS, SEASON_LABELS } from '../../shared/utils/labels';
     </section>
   `,
   styles: `
-    .form-panel {
-      gap: 24px;
+    .panel.form-panel {
+      row-gap: 30px;
     }
 
     .season-grid {
